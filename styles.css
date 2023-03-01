@@ -14,3 +14,13 @@ body {
 .sidebar {
   background-color: rgb(11, 118, 211);
 }
+
+.content {
+  display: grid;
+  grid-template: 150px 1fr / 1fr;
+}
+
+.main {
+  display: grid;
+  grid-template: 1fr / 4fr 1fr;
+}
