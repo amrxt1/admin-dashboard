@@ -5,6 +5,7 @@ body {
   margin: 0;
   font-family: "Roboto", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: rgb(230, 230, 230);
 }
 .container {
   height: 100%;
@@ -116,11 +117,19 @@ a:visited {
   row-gap: 15px;
 }
 .card {
-  height: 250px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: white;
+
+  display: grid;
+  grid-template: auto 1fr auto / 1fr;
+  gap: 7px;
+  padding: 10px 17px;
 }
 .stripe {
-  grid-column: 1/2;
   background-color: yellow;
+  width: 10px;
+  grid-row: span 3;
 }
 
 .notice-board {
@@ -138,4 +147,7 @@ classes for styling
 }
 .heading {
   font-size: 1.5rem;
+}
+.bold {
+  font-weight: bold;
 }
