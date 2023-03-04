@@ -10,7 +10,7 @@ body {
 .container {
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 4.5fr;
   grid-template-rows: 1fr;
 }
 
@@ -100,9 +100,9 @@ a:visited {
 
 .main {
   display: grid;
-  grid-template: 1fr / 2fr 1fr;
+  grid-template: 1fr / 3fr 1fr;
   padding: 1% 2%;
-  gap: 10px;
+  gap: 20px;
 }
 
 .projects {
@@ -126,17 +126,47 @@ a:visited {
   gap: 7px;
   padding: 10px 17px;
 }
-.stripe {
-  background-color: yellow;
-  width: 10px;
-  grid-row: span 3;
+.description {
+  font-weight: 300;
+  font-size: 0.9rem;
 }
 
 .notice-board {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
+.announcements {
+  display: grid;
+  gap: 10px;
+}
+.announcements > #area {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 30px;
 
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.announcement {
+  padding: 0px 4px;
+}
+.announcement > .heading {
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+.announcement > .text {
+  font-weight: 300;
+  font-size: 0.9rem;
+  letter-spacing: 0.02rem;
+}
+.separator {
+  height: 1px;
+  width: 100%;
+  background-color: gray;
+  margin: 5px 0px;
+}
 /*
 classes for styling 
 */
